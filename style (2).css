@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    background-color: #faf3e0;
+    color: #3e2723;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4e342e;
+    color: white;
+    padding: 15px;
+}
+
+nav button {
+    background: #d84315;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #bf360c;
+}
+
+.halaman {
+    display: none;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.halaman.aktif {
+    display: block;
+}
+
+.btn {
+    background: #4e342e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}

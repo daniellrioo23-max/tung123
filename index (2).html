@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>☕ Kopi Senja</h2>
+        <nav>
+            <button onclick="tampil('beranda')">Beranda</button>
+            <button onclick="tampil('menu')">Menu</button>
+            <button onclick="tampil('kontak')">Kontak</button>
+        </nav>
+    </header>
+
+    <!-- Halaman 1: Beranda -->
+    <section id="beranda" class="halaman aktif">
+        <h1>Selamat Datang di Kopi Senja</h1>
+        <p>Tempat santai menikmati kopi lokal pilihan di sore hari.</p>
+        <button class="btn" onclick="tampil('menu')">Lihat Menu</button>
+    </section>
+
+    <!-- Halaman 2: Menu -->
+    <section id="menu" class="halaman">
+        <h1>Daftar Menu</h1>
+        <div class="item"><span>Es Kopi Susu Senja</span> <b>Rp 20.000</b></div>
+        <div class="item"><span>Americano Panas/Dingin</span> <b>Rp 18.000</b></div>
+        <div class="item"><span>Matcha Latte</span> <b>Rp 22.000</b></div>
+        <div class="item"><span>Croissant Cokelat</span> <b>Rp 15.000</b></div>
+    </section>
+
+    <!-- Halaman 3: Kontak -->
+    <section id="kontak" class="halaman">
+        <h1>Lokasi & Kontak</h1>
+        <p>📍 Jl. Senja No. 12, Magelang</p>
+        <p>⏰ Buka Setiap Hari: 09.00 - 22.00 WIB</p>
+        <p>📱 WhatsApp: 0812-3456-7890</p>
+    </section>
+
+    <script>
+        function tampil(id) {
+            document.querySelectorAll('.halaman').forEach(el => el.classList.remove('aktif'));
+            document.getElementById(id).classList.add('aktif');
+        }
+    </script>
+
+</body>
+</html>
